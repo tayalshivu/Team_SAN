@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DesiredJob">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="#ffffff"
+        android:background="@color/colorPrimary"
+        app:layout_scrollFlags="enterAlways"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Preferences"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_margin="10dp"
+        android:id="@+id/industry_pref"
+        android:layout_below="@+id/toolbar"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"
+        android:hint="Industry Preference"
+        android:drawablePadding="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/industry_pref"
+        android:id="@+id/role_pref"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:drawablePadding="10dp"
+        android:hint="Role Preference"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/role_pref"
+        android:id="@+id/expec_salary"
+        android:inputType="text"
+        android:maxLines="1"
+        android:drawablePadding="10dp"
+        android:hint="Expected Salary (LPA)"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/expec_salary"
+        android:id="@+id/desired_location"
+        android:inputType="textPassword"
+        android:drawablePadding="10dp"
+        android:hint="Desired Location"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/desired_location"
+        android:id="@+id/desired_shift"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:drawablePadding="10dp"
+        android:hint="Desired Shift"
+        />
+
+
+</RelativeLayout>

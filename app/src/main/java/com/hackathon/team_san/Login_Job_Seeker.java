@@ -53,7 +53,5 @@ public class Login_Job_Seeker extends AppCompatActivity {
                 finish();
             }
         });
-
-
     }
 }
