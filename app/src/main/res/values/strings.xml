@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Team_SAN</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">email</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="language_known">Language Known</string>
+    <string name="native_location">Native Location</string>
 </resources>

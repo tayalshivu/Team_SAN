@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="#ffffff"
+        android:background="@color/colorPrimary"
+        app:layout_scrollFlags="enterAlways"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Personal Details"/>
+   <TextView
+       android:id="@+id/txtemail"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="6dp"
+       android:layout_below="@+id/toolbar"
+       android:text="@string/email"
+       android:textSize="20dp"
+       android:layout_margin="10dp"
+       />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_margin="10dp"
+        android:id="@+id/etUserName"
+        android:layout_below="@+id/txtemail"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"
+        android:hint="@string/full_name"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_person"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/etUserName"
+        android:id="@+id/etMobileNumber"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:drawablePadding="10dp"
+        android:hint="Phone Number"
+        android:drawableLeft="@drawable/ic_phone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/etMobileNumber"
+        android:id="@+id/etWhatsapp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:drawablePadding="10dp"
+        android:hint="Whatsapp Number(Optional)"
+        android:drawableLeft="@drawable/ic_phone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/etWhatsapp"
+        android:id="@+id/etGender"
+        android:inputType="textPassword"
+        android:drawablePadding="10dp"
+        android:hint="Gender"
+        android:drawableLeft="@drawable/ic_person"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/etGender"
+        android:id="@+id/etMaritalstatus"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:drawablePadding="10dp"
+        android:hint="@string/marital_status"
+        android:drawableLeft="@drawable/ic_marital"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/etMaritalstatus"
+        android:id="@+id/etlanguageknown"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:drawablePadding="10dp"
+        android:hint="@string/language_known"
+        android:drawableLeft="@drawable/ic_language"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/etlanguageknown"
+        android:id="@+id/etNativeLocation"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:drawablePadding="10dp"
+        android:hint="@string/native_location"
+        android:drawableLeft="@drawable/ic_place"/>
+
+
+
+
+
+</RelativeLayout>
