@@ -1,46 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Jobseeker_Recruiter_Selection"
-    android:orientation="vertical"
-    >
+    android:layout_height="match_parent">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="196dp"
-        android:clickable="true"
-        android:src="@drawable/hire_me"
-        android:layout_gravity="top"
-        android:cropToPadding="true"/>
+        android:id="@+id/imgLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
 
-    <TextView
-        android:id="@+id/job_seeker"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/jobseeker"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Are a job Seeker?\nThen click here"
-        android:layout_gravity="center"
-        android:gravity="center"
-        />
+        android:layout_below="@id/imgLogo"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:padding="17dp"
+        android:text="@string/job_seeker"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="230dp"
-        android:layout_gravity="bottom"
-        android:src="@drawable/recruiter"
-        android:cropToPadding="true"
-        />
-
-    <TextView
+    <Button
         android:id="@+id/recruiter"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Are a Recruiter?\nThen click here"
-        android:layout_gravity="center"
-        android:gravity="center"
-        />
+
+        android:layout_below="@+id/jobseeker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:padding="17dp"
+        android:text="@string/recruiter"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
 
 
-</LinearLayout>
+</RelativeLayout>

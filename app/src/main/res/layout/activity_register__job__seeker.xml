@@ -3,91 +3,90 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Register_Job_Seeker"
-    android:background="@drawable/recruiter2"
-    >
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:id="@+id/email1"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@id/password"
-        android:background="@drawable/job_seeker_login_layout"
-        android:layout_marginBottom="10dp"
-        android:textColorHint="@color/black">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/email"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:hint="Email" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:id="@+id/password"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@id/cnfrmpass"
-        app:passwordToggleEnabled="true"
-        android:background="@drawable/job_seeker_login_layout"
-        android:layout_marginBottom="10dp"
-        android:textColorHint="@color/black">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:hint="Password"
-            android:id="@+id/password1"
-            android:inputType="textPassword"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:id="@+id/cnfrmpass"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        app:passwordToggleEnabled="true"
-        android:background="@drawable/job_seeker_login_layout"
-        android:textColorHint="@color/black">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:hint="Retype Password"
-            android:id="@+id/cnfrmpass1"
-            android:inputType="textPassword"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <Button
-        android:id="@+id/register"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:text="REGISTER"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/cnfrmpass"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/login_button"
-        android:textColor="@color/white"
-        android:textSize="15dp"/>
-
+    android:layout_height="match_parent">
     <TextView
-        android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already Registered?  Login"
-        android:layout_below="@id/register"
-        android:textColor="@color/white"
+        android:text="Job Seeker "
+        android:textSize="30sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:textStyle="bold|italic"
-        android:textSize="15dp"
-        />
+        android:layout_margin="15dp"/>
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="#FAD7A0"
+        android:layout_marginTop="20dp"
+        android:id="@+id/etMobileNumber"
+        android:layout_below="@id/imgLogo"
+        android:inputType="phone"
+        android:drawablePadding="10dp"
+        android:maxLines="1"
+        android:maxLength="10"
+
+        android:hint="@string/email"
+        android:drawableLeft="@drawable/ic_phone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/etpassword"
+        android:layout_below="@id/etMobileNumber"
+        android:inputType="textPassword"
+        android:backgroundTint="#FAD7A0"
+        android:maxLines="1"
+        android:hint="@string/password"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_mail"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/etConfirmpassword"
+        android:layout_below="@id/etpassword"
+        android:inputType="textPassword"
+        android:backgroundTint="#FAD7A0"
+        android:maxLines="1"
+        android:hint="@string/confirm_password"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_mail"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnLogin"
+        android:layout_below="@id/etConfirmpassword"
+
+        android:text="@string/register"
+        android:background="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#ffffff"/>
+
+
+
 
 </RelativeLayout>
